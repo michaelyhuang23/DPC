@@ -1,5 +1,5 @@
-#include "/mnt/d/_external_lib/spatial_2.1.8/src/idle_point_multiset.hpp"
-#include "/mnt/d/_external_lib/spatial_2.1.8/src/bits/spatial_neighbor.hpp"
+#include "../../spatial_2.1.8/src/idle_point_multiset.hpp"
+#include "../../spatial_2.1.8/src/bits/spatial_neighbor.hpp"
 #include <random>
 #include <array>
 #include <unordered_set>
@@ -9,7 +9,7 @@
 
 
 // parameter & variable
-const unsigned int dimensionality = 4;	// house: 4, PAMAP2: 4, Farm: 5, Sensor 8
+const unsigned int dimensionality = 2;	// house: 4, PAMAP2: 4, Farm: 5, Sensor 8
 const float dist_max = 1000000000;
 
 // declear class "pt"

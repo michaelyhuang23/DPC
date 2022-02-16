@@ -1,0 +1,3 @@
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+7054,670906,74610,19307,771877,0,12,0,0
+

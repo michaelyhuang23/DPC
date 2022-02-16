@@ -78,6 +78,7 @@ void input_parameter() {
 		delta_min = 10000;
 		local_density_min = 10;
 	}
+
 }
 
 // data input

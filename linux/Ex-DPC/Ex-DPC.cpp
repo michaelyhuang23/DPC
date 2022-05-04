@@ -25,7 +25,6 @@ void kdtree_build() {
 void computation_local_density() {
 
 	start = std::chrono::system_clock::now();
-
 	// iterate range search
 	#pragma omp parallel num_threads(core_no)
 	{
@@ -36,6 +35,7 @@ void computation_local_density() {
 			std::uniform_real_distribution<> rnd(0, 0.9999);
 
 			dataset_pt[i].local_density = (kdtree.radiusSearch(dataset_pt[i], cutoff)).size();
+			// std::cout<<dataset_pt[i].local_density<<std::endl;
 			dataset_pt[i].local_density += rnd(mt);
 		}
 	}
@@ -192,7 +192,6 @@ int main() {
 	std::cout << " #threads: " << core_no << "\n";
 	std::cout << " ---------\n\n";
 
-
 	// local density computation
 	computation_local_density();
 
@@ -206,7 +205,7 @@ int main() {
 	//output_cpu_time();
 
 	// output label
-	//output_label();
+	// output_label();
 	//output_coord_label();
 
 	return 0;

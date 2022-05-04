@@ -68,7 +68,7 @@ void input_parameter() {
 	// determine delta_min & rho_min
 	if (dataset_id == 0) {
 
-		delta_min = 10000;
+		delta_min = 100000000;
 		local_density_min = 5;
 	}
 }
@@ -138,7 +138,7 @@ void input_data() {
 
 	// normalization if necessary
 	float coord_max = 100000;
-	bool flag = 1;
+	bool flag = 0;
 	if (flag) {
 
 		for (unsigned int i = 0; i < dimensionality; ++i) d_max[i] -= d_min[i];

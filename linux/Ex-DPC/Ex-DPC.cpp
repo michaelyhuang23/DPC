@@ -62,7 +62,7 @@ void computation_dependency() {
 
 	std::deque<double> array_time;
 
-	start = std::chrono::system_clock::now();
+	double tt = 0;
 
 	std::vector<unsigned int> buf;
 
@@ -71,6 +71,7 @@ void computation_dependency() {
 		if (dataset_pt[i].local_density < local_density_min) break;
 
 		// NN search
+		start = std::chrono::system_clock::now();
 		if (i >= 1) {
 			spatial::neighbor_iterator<container_type> iter = neighbor_begin(kd_tree, dataset_pt[i]);
 			dataset_pt[i].NN_dist = distance(iter);
@@ -86,7 +87,9 @@ void computation_dependency() {
 				if (temp > dataset_pt[i].NN_dist) dataset_pt[i].NN_dist = temp;
 			}
 		}
-
+		end = std::chrono::system_clock::now();
+		double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+		tt += t;
 		// check cluster center
 		if (delta_min <= dataset_pt[i].NN_dist && dataset_pt[i].local_density >= local_density_min) {
 
@@ -110,14 +113,14 @@ void computation_dependency() {
 			}
 		}
 	}
-	end = std::chrono::system_clock::now();
-	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " dependency computation time: " << t << "[microsec]\n\n";
+//	end = std::chrono::system_clock::now();
+//	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+	std::cout << " query computation time: " << tt << "[microsec]\n\n";
 
 	//unsigned int noise_cnt = dataset_pt.size() - nonnoise_cnt;
 	//std::cout << " noise count: " << noise_cnt << "\t" << "noise ratio: " << (double)noise_cnt / dataset_pt.size() << "\n\n";
 
-	cpu_dependency = t;
+	cpu_dependency = tt;
 
 	// output decision graph
 //	output_decision_graph();

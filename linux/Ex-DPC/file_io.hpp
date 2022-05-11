@@ -137,20 +137,20 @@ void input_data() {
 	}
 
 	// normalization if necessary
-	float coord_max = 100000;
-	bool flag = 0;
-	if (flag) {
+	// float coord_max = 100000;
+	// bool flag = 0;
+	// if (flag) {
 
-		for (unsigned int i = 0; i < dimensionality; ++i) d_max[i] -= d_min[i];
+	// 	for (unsigned int i = 0; i < dimensionality; ++i) d_max[i] -= d_min[i];
 
-		for (unsigned int i = 0; i < dataset_pt.size(); ++i) {
-			for (unsigned int j = 0; j < dimensionality; ++j) {
-				dataset_pt[i][j] -= d_min[j];
-				dataset_pt[i][j] /= d_max[j];
-				dataset_pt[i][j] *= coord_max;
-			}
-		}
-	}
+	// 	for (unsigned int i = 0; i < dataset_pt.size(); ++i) {
+	// 		for (unsigned int j = 0; j < dimensionality; ++j) {
+	// 			dataset_pt[i][j] -= d_min[j];
+	// 			dataset_pt[i][j] /= d_max[j];
+	// 			dataset_pt[i][j] *= coord_max;
+	// 		}
+	// 	}
+	// }
 
 	// reserve memory
 	rnn.reserve(dataset_pt.size());

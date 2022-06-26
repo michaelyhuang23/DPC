@@ -87,10 +87,7 @@ void computation_dependency() {
 				if (temp > dataset_pt[i].NN_dist) dataset_pt[i].NN_dist = temp;
 			}
 		}
-		end = std::chrono::system_clock::now();
-		double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-		tt += t;
-		// check cluster center
+				// check cluster center
 		if (delta_min <= dataset_pt[i].NN_dist && dataset_pt[i].local_density >= local_density_min) {
 
 			// set label as itsself
@@ -112,10 +109,14 @@ void computation_dependency() {
 				kd_tree.insert(dataset_pt[i]);
 			}
 		}
+
+		end = std::chrono::system_clock::now();
+		double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+		tt += t;
 	}
 //	end = std::chrono::system_clock::now();
 //	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " query computation time: " << tt << "[microsec]\n\n";
+	std::cout << " query computation time: " << tt/1000000 << "[sec]\n\n";
 
 	//unsigned int noise_cnt = dataset_pt.size() - nonnoise_cnt;
 	//std::cout << " noise count: " << noise_cnt << "\t" << "noise ratio: " << (double)noise_cnt / dataset_pt.size() << "\n\n";

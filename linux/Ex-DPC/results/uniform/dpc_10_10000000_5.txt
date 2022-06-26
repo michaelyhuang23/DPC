@@ -1,0 +1,14 @@
+ ---------
+ data id: 0
+ dimensionality: 2
+ sampling rate: 1
+ cutoff-distance: 10
+ #threads: 5
+ ---------
+
+ local density computation time: 5.5574e+07[microsec]
+
+ query computation time: 53.5303[sec]
+
+ label propagation time: 0[microsec]
+

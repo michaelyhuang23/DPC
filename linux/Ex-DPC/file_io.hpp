@@ -68,8 +68,8 @@ void input_parameter() {
 	// determine delta_min & rho_min
 	if (dataset_id == 0) {
 
-		delta_min = 100000000;
-		local_density_min = 5;
+		delta_min = 1000000000000.0f; // this is value above which to separate clusters, we never separate clusters
+		local_density_min = 0; // density below this point are considered noise and ignored
 	}
 }
 

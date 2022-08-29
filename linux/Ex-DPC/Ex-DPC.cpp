@@ -1,7 +1,7 @@
 ﻿#include "file_io.hpp"
 
 
-// unsigned int nonnoise_cnt = 0;
+unsigned int nonnoise_cnt = 0;
 
 
 // distance computation
@@ -42,19 +42,9 @@ void computation_local_density() {
 
 	end = std::chrono::system_clock::now();
 	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " local density computation time: " << t << "[microsec]\n\n";
+	std::cout << " local density computation time: " << t/1000000 << "[sec]\n\n";
 
-	cpu_local_density = t;
-
-	// (parallel) sort by local density
-	start = std::chrono::system_clock::now();
-
-	std:sort(dataset_pt.begin(), dataset_pt.end(), desc_local_density);
-
-	end = std::chrono::system_clock::now();
-	t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-
-	cpu_local_density += t;
+	
 }
 
 // dependency check
@@ -63,15 +53,16 @@ void computation_dependency() {
 	std::deque<double> array_time;
 
 	double tt = 0;
+	start = std::chrono::system_clock::now();
 
 	std::vector<unsigned int> buf;
+	std:sort(dataset_pt.begin(), dataset_pt.end(), desc_local_density);
 
 	for (unsigned int i = 0; i < dataset_pt.size(); ++i) {
 
 		if (dataset_pt[i].local_density < local_density_min) break;
 
 		// NN search
-		start = std::chrono::system_clock::now();
 		if (i >= 1) {
 			spatial::neighbor_iterator<container_type> iter = neighbor_begin(kd_tree, dataset_pt[i]);
 			dataset_pt[i].NN_dist = distance(iter);
@@ -109,16 +100,11 @@ void computation_dependency() {
 				kd_tree.insert(dataset_pt[i]);
 			}
 		}
-
-		end = std::chrono::system_clock::now();
-		double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-		tt += t;
 	}
-//	end = std::chrono::system_clock::now();
-//	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " query computation time: " << tt/1000000 << "[sec]\n\n";
+	end = std::chrono::system_clock::now();
+	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+	std::cout << " dep computation time: " << t/1000000 << "[sec]\n\n";
 
-	//unsigned int noise_cnt = dataset_pt.size() - nonnoise_cnt;
 	//std::cout << " noise count: " << noise_cnt << "\t" << "noise ratio: " << (double)noise_cnt / dataset_pt.size() << "\n\n";
 
 	cpu_dependency = tt;
@@ -173,7 +159,7 @@ void computation_label_propagation() {
 
 	end = std::chrono::system_clock::now();
 	cpu_label = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " label propagation time: " << cpu_label << "[microsec]\n\n";
+	std::cout << " label propagation time: " << cpu_label/1000000 << "[sec]\n\n";
 }
 
 

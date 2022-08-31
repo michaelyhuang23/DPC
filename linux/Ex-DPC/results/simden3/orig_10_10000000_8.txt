@@ -1,14 +1,15 @@
+20 0 10
  ---------
  data id: 0
- dimensionality: 3
+ dimensionality: 2
  sampling rate: 1
  cutoff-distance: 10
  #threads: 8
  ---------
 
- local density computation time: 26.0024[sec]
+ local density computation time: 8.13624[sec]
 
- dep computation time: 171.678[sec]
+ dep computation time: 152.711[sec]
 
- label propagation time: 3.29813[sec]
+ label propagation time: 3.26045[sec]
 

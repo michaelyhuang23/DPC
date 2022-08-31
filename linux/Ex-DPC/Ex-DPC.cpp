@@ -6,7 +6,6 @@ unsigned int nonnoise_cnt = 0;
 
 // distance computation
 float computation_distance(pt& p, pt& q) {
-
 	float dist = 0;
 	for (unsigned int i = 0; i < dimensionality; ++i) dist += (p[i] - q[i]) * (p[i] - q[i]);
 	return sqrt(dist);

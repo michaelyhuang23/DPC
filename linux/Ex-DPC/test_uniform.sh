@@ -1,12 +1,12 @@
 R=10000000
-
+r=30
 
 for((t=1; t<=3; t+=1)); do
 	echo $t
 	for((s=1; s<=16; s*=2)); do
 		echo ${s}
 		for((i=1000; i<=$R; i*=10)); do
-			r=10
+			
 			echo $i
 			cp ../../../ParCluster/dataset/uniform/${i}.txt ../_dataset/synthetic.txt
 			echo ${r} > ../_parameter/cutoff.txt
@@ -17,7 +17,7 @@ for((t=1; t<=3; t+=1)); do
 	for((s=30; s<=60; s*=2)); do
 		echo ${s}
 		for((i=1000; i<=$R; i*=10)); do
-			r=10
+			
 			echo $i
 			cp ../../../ParCluster/dataset/uniform/${i}.txt ../_dataset/synthetic.txt
 			echo ${r} > ../_parameter/cutoff.txt

@@ -15,14 +15,14 @@ unsigned int dataset_id = 0;
 float sampling_rate = 1;
 
 // cutoff distance
-float cutoff = 0;
+float cutoff = 10;
 float local_density_min = 0;
 
 // parameter for cluster center
 float delta_min = 0;
 
 // system parameter and variables
-float coord_max = 100000;
+float coord_max = 100000.01;
 unsigned int core_no = 1;
 unsigned int cell_pts_size_min = 10;
 unsigned int subset_size = 1;
@@ -45,10 +45,10 @@ std::unordered_map<unsigned int, unsigned int> label_set;
 // parameter input
 void input_parameter() {
 
-	std::ifstream ifs_cutoff("parameter/cutoff.txt");
-	std::ifstream ifs_dataset_id("parameter/dataset_id.txt");
-	std::ifstream ifs_core_no("parameter/core_no.txt");
-	std::ifstream ifs_sampling_rate("parameter/sampling_rate.txt");
+	std::ifstream ifs_cutoff("../_parameter/cutoff.txt");
+	std::ifstream ifs_dataset_id("../_parameter/dataset_id.txt");
+	std::ifstream ifs_core_no("../_parameter/thread_num.txt");
+	std::ifstream ifs_sampling_rate("../_parameter/sampling_rate.txt");
 
 	if (ifs_cutoff.fail()) {
 		std::cout << " cutoff.txt does not exist." << std::endl;
@@ -59,7 +59,7 @@ void input_parameter() {
 		std::exit(0);
 	}
 	else if (ifs_core_no.fail()) {
-		std::cout << " core_no.txt does not exist." << std::endl;
+		std::cout << " thread_num.txt does not exist." << std::endl;
 		std::exit(0);
 	}
 	else if (ifs_sampling_rate.fail()) {
@@ -75,10 +75,10 @@ void input_parameter() {
 	// determine parameters
 	if (dataset_id == 0) {
 
-		delta_min = 10000;
-		local_density_min = 10;
+		delta_min = 100;
+		local_density_min = 0;
 	}
-
+	std::cout<<delta_min<<" "<<local_density_min<<" "<<cutoff<<std::endl;
 }
 
 // data input

@@ -33,7 +33,7 @@ void grid_mapping() {
 
 	end = std::chrono::system_clock::now();
 	cpu_grid_mapping = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " grid mapping time: " << cpu_grid_mapping << "[microsec]\t" << "grid size: " << grid.size() << "\n\n";
+	std::cout << " grid mapping time: " << cpu_grid_mapping/1000000 << "[sec]\t" << "grid size: " << grid.size() << "\n\n";
 }
 
 // grid partition (small and large cells)
@@ -62,7 +62,7 @@ void grid_partition_small_and_large() {
 
 	end = std::chrono::system_clock::now();
 	cpu_grid_partition = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " grid partition time: " << cpu_grid_partition << "[microsec]\n\n";
+	std::cout << " grid partition time: " << cpu_grid_partition/1000000 << "[sec]\n\n";
 }
 
 // local-density computation for small cells
@@ -100,7 +100,7 @@ void local_density_computation_small() {
 
 	end = std::chrono::system_clock::now();
 	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " local density computation time (1): " << t << "[microsec]\n\n";
+	std::cout << " local density computation time (1): " << t/1000000 << "[sec]\n\n";
 
 	cpu_local_density += t;
 }
@@ -147,7 +147,7 @@ void local_density_computation_large() {
 
 	end = std::chrono::system_clock::now();
 	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " local density computation time (2): " << t << "[microsec]\n\n";
+	std::cout << " local density computation time (2): " << t/1000000 << "[sec]\n\n";
 
 	// update local-density comp. time
 	cpu_local_density += t;
@@ -185,16 +185,16 @@ void dependent_point_computation() {
 
 	end = std::chrono::system_clock::now();
 	cpu_dependency = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " dependent point computation time: " << cpu_dependency << "[microsec]\n\n";
+	std::cout << " dependent point computation time: " << cpu_dependency/1000000 << "[sec]\n\n";
 }
 
 // label propagation
 void computation_label_propagation() {
-
+	// sort by ID
 	start = std::chrono::system_clock::now();
 
-	// sort by ID
-	std::sort(dataset_pt.begin(), dataset_pt.end(), asc_id);
+  	std::sort(dataset_pt.begin(), dataset_pt.end(), asc_id);
+
 
 	// init stack
 	std::deque<unsigned int> stack;
@@ -237,7 +237,7 @@ void computation_label_propagation() {
 
 	end = std::chrono::system_clock::now();
 	cpu_label = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " label propagation time: " << cpu_label << "[microsec]\n\n";
+	std::cout << " label propagation time: " << cpu_label/1000000 << "[sec]\n\n";
 
 	// accuracy computation
 	for (unsigned int i = 0; i < dataset_pt.size(); ++i) {

@@ -1,0 +1,45 @@
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+318,1988,2264,54,4624,0,1000,0.000999001,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+3340,3681,19634,861,27516,0,9991,9.999e-05,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+43730,27704,243527,9723,324684,0,99372,9.9999e-06,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+633789,343848,4.39524e+06,243905,5.61678e+06,0,939350,9.99999e-07,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+7.42214e+06,5.6065e+06,1.1154e+08,3.173e+06,1.27742e+08,0,5561953,0,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+311,1989,2230,54,4584,0,1000,0.000999001,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+3348,3688,19706,881,27623,0,9991,9.999e-05,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+43567,27131,231258,9293,311249,0,99372,9.9999e-06,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+636516,341135,4.4812e+06,241354,5.7002e+06,0,939350,9.99999e-07,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+7.45128e+06,7.54234e+06,1.13845e+08,3.19508e+06,1.32034e+08,0,5561953,0,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+314,1973,2239,55,4581,0,1000,0.000999001,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+3353,3797,19482,849,27481,0,9991,9.999e-05,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+43822,28069,248319,10244,330454,0,99372,9.9999e-06,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+638119,343700,4.36573e+06,240760,5.58831e+06,0,939350,9.99999e-07,0
+
+Grid mapping time [microsec],Local density comp. time [microsec],Dependency comp. time [microsec],Label propagation time [microsec],Total time [microsec],Memory [MB],Number of clusters,Accuracy,Rand index,
+7.43341e+06,6.99751e+06,1.13416e+08,3.15967e+06,1.31006e+08,0,5561953,0,0
+

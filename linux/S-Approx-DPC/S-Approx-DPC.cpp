@@ -176,8 +176,7 @@ int main() {
 	// data input
 	input_data();
 
-	// inout label (ground trueth)
-	input_label();
+
 
 	// build kd-tree for range search
 	kdtree_build();
@@ -204,11 +203,6 @@ int main() {
 	// cluster assignment
 	computation_label_propagation();
 
-	// compute rand index
-	compute_rand_index();
-
-	// output computation time
-	output_cpu_time();
 
 //	output_decision_graph();
 //	output_coord_label();

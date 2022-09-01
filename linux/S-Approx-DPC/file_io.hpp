@@ -78,8 +78,8 @@ void input_parameter() {
 	// determine parameters
 	if (dataset_id == 0) {
 
-		delta_min = 10000;
-		local_density_min = 5;
+		delta_min = 10;
+		local_density_min = 1000;
 	}
 }
 

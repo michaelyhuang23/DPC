@@ -1,0 +1,22 @@
+100 0 30
+ -----------
+ data id: 0
+ dimensionality: 2
+ sampling rate: 1
+ cardinality: 10000001
+ cutoff-distance: 30
+ thread number: 30
+ -----------
+
+ grid mapping time: 7.35828[sec]	grid size: 8053789
+
+ grid partition time: 1.75732[sec]
+
+ local density computation time (1): 8.58553[sec]
+
+ local density computation time (2): 6.6e-05[sec]
+
+ dependent point computation time: 53.4394[sec]
+
+ label propagation time: 5.28799[sec]
+

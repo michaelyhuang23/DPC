@@ -80,7 +80,7 @@ void input_parameter() {
 	if (dataset_id == 0) {
 
 		delta_min = 10;
-		local_density_min = 30;
+		local_density_min = 1000;
 	}
 	std::cout<<delta_min<<" "<<local_density_min<<" "<<cutoff<<std::endl;
 }

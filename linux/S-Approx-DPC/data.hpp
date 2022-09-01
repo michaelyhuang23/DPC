@@ -7,7 +7,9 @@
 
 
 // parameter & variable
-const unsigned int dimensionality = 10;
+
+const unsigned int dimensionality = 3;
+
 const float dist_max = 1000000000;
 
 // decreare class "pt"

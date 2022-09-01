@@ -203,11 +203,6 @@ int main() {
 	// cluster assignment
 	computation_label_propagation();
 
-	// compute rand index
-	//	compute_rand_index();
-
-
-
 //	output_decision_graph();
 //	output_coord_label();
 

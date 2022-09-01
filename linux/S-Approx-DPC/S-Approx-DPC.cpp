@@ -39,7 +39,7 @@ void grid_mapping() {
 
 	end = std::chrono::system_clock::now();
 	cpu_grid_mapping = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " grid mapping time: " << cpu_grid_mapping << "[microsec]\n\n";
+	std::cout << " grid mapping time: " << cpu_grid_mapping/1000000 << "[sec]\n\n";
 }
 
 // local-density computation
@@ -75,7 +75,7 @@ void local_density_computation() {
 
 	end = std::chrono::system_clock::now();
 	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " local density computation time: " << t << "[microsec]\n\n";
+	std::cout << " local density computation time: " << t/1000000 << "[sec]\n\n";
 	cpu_local_density += t;
 }
 
@@ -94,7 +94,15 @@ void dependent_point_computation() {
 
 	end = std::chrono::system_clock::now();
 	cpu_dependency = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " dependent point computation time: " << cpu_dependency << "[microsec]\n\n";
+	std::cout << " dependent point computation time: " << cpu_dependency/1000000 << "[sec]\n\n";
+
+	
+}
+
+// label propagation
+void computation_label_propagation() {
+
+	start = std::chrono::system_clock::now();
 
 	// sort by descending order of dependent distance
 	std::sort(cluster_center_candidate.begin(), cluster_center_candidate.end(), desc_dependent_dist);
@@ -107,12 +115,6 @@ void dependent_point_computation() {
 		cluster_center_candidate[i]->label = cluster_center_candidate[i]->id;
 		cluster_centers.push_back(cluster_center_candidate[i]->id);
 	}
-}
-
-// label propagation
-void computation_label_propagation() {
-
-	start = std::chrono::system_clock::now();
 
 	#pragma omp parallel num_threads(core_no)
 	{
@@ -162,7 +164,7 @@ void computation_label_propagation() {
 
 	end = std::chrono::system_clock::now();
 	cpu_label = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " label propagation time: " << cpu_label << "[microsec]\n\n";
+	std::cout << " label propagation time: " << cpu_label/1000000 << "[sec]\n\n";
 
 //	output_coord_label();
 }
@@ -175,9 +177,6 @@ int main() {
 
 	// data input
 	input_data();
-
-	// inout label (ground trueth)
-	input_label();
 
 	// build kd-tree for range search
 	kdtree_build();
@@ -205,10 +204,9 @@ int main() {
 	computation_label_propagation();
 
 	// compute rand index
-	compute_rand_index();
+	//	compute_rand_index();
 
-	// output computation time
-	output_cpu_time();
+
 
 //	output_decision_graph();
 //	output_coord_label();

@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -81,6 +82,7 @@ void input_parameter() {
 		delta_min = 10;
 		local_density_min = 1000;
 	}
+	std::cout<<delta_min<<" "<<local_density_min<<" "<<cutoff<<std::endl;
 }
 
 // compute directory

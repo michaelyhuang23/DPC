@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -78,9 +79,10 @@ void input_parameter() {
 	// determine parameters
 	if (dataset_id == 0) {
 
-		delta_min = 10000;
+		delta_min = 2;
 		local_density_min = 5;
 	}
+	std::cout<<delta_min<<" "<<local_density_min<<" "<<cutoff<<std::endl;
 }
 
 // compute directory

@@ -1,0 +1,18 @@
+2 5 0.2
+-----------------
+ data id: 0
+ dimensionality: 5
+ sampling rate: 1
+ sampling rate (cell): 1
+ cutoff-distance: 0.2
+ core number: 2
+-----------------
+
+ grid mapping time: 8.58559[sec]
+
+ local density computation time: 3288.89[sec]
+
+ dependent point computation time: 2034.62[sec]
+
+ label propagation time: 0.50608[sec]
+

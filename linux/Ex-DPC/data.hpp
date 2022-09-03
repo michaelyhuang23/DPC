@@ -7,7 +7,8 @@
 
 
 // parameter
-const unsigned int dimensionality = 8;	// house: 4, PAMAP2: 4, Farm: 5, Sensor: 8, Airline: 3
+
+const unsigned int dimensionality = 5;	// house: 4, PAMAP2: 4, Farm: 5, Sensor: 8, Airline: 3
 
 
 // definition

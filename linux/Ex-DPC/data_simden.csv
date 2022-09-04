@@ -1,0 +1,106 @@
+,name,r,n,thread,part,time
+0,orig,30.0,1000,1,density computation,0.0042513333333333335
+1,orig,30.0,1000,1,dependent point finding,0.0005566666666666667
+2,orig,30.0,1000,1,single linkage clustering,6.433333333333333e-05
+3,orig,30.0,1000,2,density computation,0.0023049999999999998
+4,orig,30.0,1000,2,dependent point finding,0.000571
+5,orig,30.0,1000,2,single linkage clustering,6.433333333333333e-05
+6,orig,30.0,1000,4,density computation,0.0012900000000000001
+7,orig,30.0,1000,4,dependent point finding,0.0005776666666666666
+8,orig,30.0,1000,4,single linkage clustering,6.266666666666667e-05
+9,orig,30.0,1000,8,density computation,0.0008743333333333333
+10,orig,30.0,1000,8,dependent point finding,0.0005846666666666666
+11,orig,30.0,1000,8,single linkage clustering,6.166666666666667e-05
+12,orig,30.0,1000,16,density computation,0.0008940000000000002
+13,orig,30.0,1000,16,dependent point finding,0.0006733333333333334
+14,orig,30.0,1000,16,single linkage clustering,7.433333333333333e-05
+15,orig,30.0,1000,30,density computation,0.0012243333333333333
+16,orig,30.0,1000,30,dependent point finding,0.0006666666666666666
+17,orig,30.0,1000,30,single linkage clustering,7.333333333333333e-05
+18,orig,30.0,1000,60,density computation,0.002432
+19,orig,30.0,1000,60,dependent point finding,0.0006546666666666667
+20,orig,30.0,1000,60,single linkage clustering,7.4e-05
+21,orig,30.0,10000,1,density computation,0.053982
+22,orig,30.0,10000,1,dependent point finding,0.010502333333333334
+23,orig,30.0,10000,1,single linkage clustering,0.000768
+24,orig,30.0,10000,2,density computation,0.027809
+25,orig,30.0,10000,2,dependent point finding,0.010660333333333334
+26,orig,30.0,10000,2,single linkage clustering,0.0007796666666666667
+27,orig,30.0,10000,4,density computation,0.014313666666666667
+28,orig,30.0,10000,4,dependent point finding,0.010645666666666666
+29,orig,30.0,10000,4,single linkage clustering,0.0007796666666666667
+30,orig,30.0,10000,8,density computation,0.007483
+31,orig,30.0,10000,8,dependent point finding,0.010811666666666666
+32,orig,30.0,10000,8,single linkage clustering,0.0007533333333333333
+33,orig,30.0,10000,16,density computation,0.004388666666666667
+34,orig,30.0,10000,16,dependent point finding,0.011208666666666667
+35,orig,30.0,10000,16,single linkage clustering,0.000762
+36,orig,30.0,10000,30,density computation,0.0035416666666666665
+37,orig,30.0,10000,30,dependent point finding,0.011199666666666669
+38,orig,30.0,10000,30,single linkage clustering,0.0007783333333333335
+39,orig,30.0,10000,60,density computation,0.004786333333333333
+40,orig,30.0,10000,60,dependent point finding,0.011319333333333334
+41,orig,30.0,10000,60,single linkage clustering,0.0008156666666666667
+42,orig,30.0,100000,1,density computation,0.6645876666666667
+43,orig,30.0,100000,1,dependent point finding,0.239533
+44,orig,30.0,100000,1,single linkage clustering,0.013539666666666667
+45,orig,30.0,100000,2,density computation,0.34206033333333336
+46,orig,30.0,100000,2,dependent point finding,0.24180833333333332
+47,orig,30.0,100000,2,single linkage clustering,0.012899333333333332
+48,orig,30.0,100000,4,density computation,0.17400566666666664
+49,orig,30.0,100000,4,dependent point finding,0.24152266666666666
+50,orig,30.0,100000,4,single linkage clustering,0.012652000000000002
+51,orig,30.0,100000,8,density computation,0.089431
+52,orig,30.0,100000,8,dependent point finding,0.24250966666666665
+53,orig,30.0,100000,8,single linkage clustering,0.012757333333333334
+54,orig,30.0,100000,16,density computation,0.04802466666666666
+55,orig,30.0,100000,16,dependent point finding,0.24309133333333333
+56,orig,30.0,100000,16,single linkage clustering,0.012387333333333334
+57,orig,30.0,100000,30,density computation,0.032847
+58,orig,30.0,100000,30,dependent point finding,0.24238566666666664
+59,orig,30.0,100000,30,single linkage clustering,0.012209
+60,orig,30.0,100000,60,density computation,0.025113333333333335
+61,orig,30.0,100000,60,dependent point finding,0.241642
+62,orig,30.0,100000,60,single linkage clustering,0.012753
+63,orig,30.0,1000000,1,density computation,7.97806
+64,orig,30.0,1000000,1,dependent point finding,8.128996666666668
+65,orig,30.0,1000000,1,single linkage clustering,0.26458966666666667
+66,orig,30.0,1000000,2,density computation,4.10066
+67,orig,30.0,1000000,2,dependent point finding,8.271663333333334
+68,orig,30.0,1000000,2,single linkage clustering,0.26645633333333335
+69,orig,30.0,1000000,4,density computation,2.2604233333333332
+70,orig,30.0,1000000,4,dependent point finding,8.452866666666667
+71,orig,30.0,1000000,4,single linkage clustering,0.26731466666666664
+72,orig,30.0,1000000,8,density computation,1.1451333333333333
+73,orig,30.0,1000000,8,dependent point finding,8.43802
+74,orig,30.0,1000000,8,single linkage clustering,0.284503
+75,orig,30.0,1000000,16,density computation,0.5836353333333334
+76,orig,30.0,1000000,16,dependent point finding,8.313136666666667
+77,orig,30.0,1000000,16,single linkage clustering,0.27647266666666664
+78,orig,30.0,1000000,30,density computation,0.3967963333333333
+79,orig,30.0,1000000,30,dependent point finding,8.30272
+80,orig,30.0,1000000,30,single linkage clustering,0.26471700000000004
+81,orig,30.0,1000000,60,density computation,0.2787576666666667
+82,orig,30.0,1000000,60,dependent point finding,8.189653333333334
+83,orig,30.0,1000000,60,single linkage clustering,0.26345966666666665
+84,orig,30.0,10000000,1,density computation,98.73306666666667
+85,orig,30.0,10000000,1,dependent point finding,287.154
+86,orig,30.0,10000000,1,single linkage clustering,3.0472900000000003
+87,orig,30.0,10000000,2,density computation,50.60763333333333
+88,orig,30.0,10000000,2,dependent point finding,287.614
+89,orig,30.0,10000000,2,single linkage clustering,3.0566066666666667
+90,orig,30.0,10000000,4,density computation,28.124866666666666
+91,orig,30.0,10000000,4,dependent point finding,290.12033333333335
+92,orig,30.0,10000000,4,single linkage clustering,3.1138433333333335
+93,orig,30.0,10000000,8,density computation,14.753433333333334
+94,orig,30.0,10000000,8,dependent point finding,291.7866666666667
+95,orig,30.0,10000000,8,single linkage clustering,3.11832
+96,orig,30.0,10000000,16,density computation,8.011666666666667
+97,orig,30.0,10000000,16,dependent point finding,289.7103333333333
+98,orig,30.0,10000000,16,single linkage clustering,3.0665533333333332
+99,orig,30.0,10000000,30,density computation,5.359306666666666
+100,orig,30.0,10000000,30,dependent point finding,290.4883333333333
+101,orig,30.0,10000000,30,single linkage clustering,3.095003333333333
+102,orig,30.0,10000000,60,density computation,3.38739
+103,orig,30.0,10000000,60,dependent point finding,290.29633333333334
+104,orig,30.0,10000000,60,single linkage clustering,3.121916666666667

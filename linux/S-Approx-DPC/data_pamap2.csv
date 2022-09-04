@@ -1,0 +1,22 @@
+,name,r,n,thread,part,time
+0,orig,0.02,1000,1,density computation,14.122416666666666
+1,orig,0.02,1000,1,dependent point finding,0.09555766666666667
+2,orig,0.02,1000,1,single linkage clustering,0.003158666666666667
+3,orig,0.02,1000,2,density computation,7.358351333333334
+4,orig,0.02,1000,2,dependent point finding,0.069785
+5,orig,0.02,1000,2,single linkage clustering,0.0017796666666666666
+6,orig,0.02,1000,4,density computation,4.486274
+7,orig,0.02,1000,4,dependent point finding,0.06357933333333333
+8,orig,0.02,1000,4,single linkage clustering,0.003890666666666667
+9,orig,0.02,1000,8,density computation,2.4718553333333335
+10,orig,0.02,1000,8,dependent point finding,0.04052166666666667
+11,orig,0.02,1000,8,single linkage clustering,0.003931666666666667
+12,orig,0.02,1000,16,density computation,1.4570203333333334
+13,orig,0.02,1000,16,dependent point finding,0.06055633333333333
+14,orig,0.02,1000,16,single linkage clustering,0.003408666666666667
+15,orig,0.02,1000,30,density computation,1.1547296666666667
+16,orig,0.02,1000,30,dependent point finding,0.024844333333333333
+17,orig,0.02,1000,30,single linkage clustering,0.004042666666666667
+18,orig,0.02,1000,60,density computation,0.832453
+19,orig,0.02,1000,60,dependent point finding,0.026188666666666666
+20,orig,0.02,1000,60,single linkage clustering,0.0030600000000000002

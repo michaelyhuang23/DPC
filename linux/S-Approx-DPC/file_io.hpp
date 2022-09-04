@@ -79,8 +79,8 @@ void input_parameter() {
 	// determine parameters
 	if (dataset_id == 0) {
 
-		delta_min = 2;
-		local_density_min = 5;
+		delta_min = 100;
+		local_density_min = 0;
 	}
 	std::cout<<delta_min<<" "<<local_density_min<<" "<<cutoff<<std::endl;
 }

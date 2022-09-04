@@ -8,7 +8,7 @@
 
 // parameter & variable
 
-const unsigned int dimensionality = 5;
+const unsigned int dimensionality = 2;
 
 const float dist_max = 1000000000;
 

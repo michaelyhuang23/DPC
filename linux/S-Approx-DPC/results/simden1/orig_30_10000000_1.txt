@@ -8,11 +8,11 @@
  core number: 1
 -----------------
 
- grid mapping time: 1.41956[sec]
+ grid mapping time: 1.41721[sec]
 
- local density computation time: 9.42817[sec]
+ local density computation time: 9.40551[sec]
 
- dependent point computation time: 111.935[sec]
+ dependent point computation time: 112.881[sec]
 
- label propagation time: 1.54859[sec]
+ label propagation time: 1.5413[sec]
 

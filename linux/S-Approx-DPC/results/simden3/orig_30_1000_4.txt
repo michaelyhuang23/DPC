@@ -5,14 +5,14 @@
  sampling rate: 1
  sampling rate (cell): 1
  cutoff-distance: 30
- core number: 2
+ core number: 4
 -----------------
 
  grid mapping time: 0.000245[sec]
 
- local density computation time: 0.001717[sec]
+ local density computation time: 0.002572[sec]
 
- dependent point computation time: 0.000814[sec]
+ dependent point computation time: 0.000598[sec]
 
- label propagation time: 4.7e-05[sec]
+ label propagation time: 3.3e-05[sec]
 

@@ -7,13 +7,13 @@ for((t=1; t<=3; t+=1)); do
         cp ../../../ParCluster/dataset/reallife/gowalla.pbbs ../_dataset/synthetic.txt
         echo ${r} > ../_parameter/cutoff.txt
         echo ${s} > ../_parameter/thread_num.txt
-        ./exdpc.out > results/gowalla${t}/orig_${r}_${s}.txt
+        ./exdpc.out > results/gowalla_local${t}/orig_${r}_${s}.txt
     done
     for((s=30; s<=60; s*=2)); do
         echo ${s}
         cp ../../../ParCluster/dataset/reallife/gowalla.pbbs ../_dataset/synthetic.txt
         echo ${r} > ../_parameter/cutoff.txt
         echo ${s} > ../_parameter/thread_num.txt
-        ./exdpc.out > results/gowalla${t}/orig_${r}_${s}.txt
+        ./exdpc.out > results/gowalla_local${t}/orig_${r}_${s}.txt
     done
 done

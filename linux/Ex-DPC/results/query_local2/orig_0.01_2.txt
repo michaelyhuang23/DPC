@@ -7,9 +7,9 @@
  #threads: 2
  ---------
 
- local density computation time: 3.81113[sec]
+ local density computation time: 3.76148[sec]
 
- dep computation time: 0.502527[sec]
+ dep computation time: 0.539721[sec]
 
  label propagation time: 0[sec]
 
